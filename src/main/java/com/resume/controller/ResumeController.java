@@ -42,6 +42,7 @@ public class ResumeController {
     @PostMapping("add")
     public AjaxResult add(@RequestBody Resume resume) {
         resumeService.add(resume);
+        System.out.println("123");
         return new AjaxResult("Add Success");
     }
 
